@@ -6,4 +6,11 @@ module.exports = function(app){
           res.json(scoreBoard);
         });
       });
+      app.post("/api/users", function(req, res){
+        db.User.create({
+          email: req.body.email
+        }).then(function(dbUser){
+          res.json(dbUser)
+        })
+      })
 }
