@@ -8,7 +8,7 @@ module.exports = function(app){
       });
       app.post("/api/users", function(req, res){
         db.User.create({
-          email: req.body.email
+          username: req.body.username
         }).then(function(dbUser){
           res.json(dbUser)
         })
