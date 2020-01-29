@@ -305,7 +305,7 @@ const score= {
     }
 }
 function draw(){
-    ctx.fillStyle = "#70c5ce";
+    ctx.fillStyle = "#70ce7d";
     ctx.fillRect(0, 0, cvs.width, cvs.height);
 
     bg.draw();
